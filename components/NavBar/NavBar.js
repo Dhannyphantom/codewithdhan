@@ -7,16 +7,11 @@ export default function NavBar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.nav_links}>
-        <p>Work</p>
-        <p>Contact</p>
+        <p>Projects</p>
+        <p>Hire Me</p>
       </div>
       <Logo />
       <div className={styles.icon_container}>
-        <FontAwesomeIcon
-          size="sm"
-          className={styles.icon}
-          icon={["fab", "square-facebook"]}
-        />
         <FontAwesomeIcon
           size="sm"
           className={styles.icon}
@@ -25,7 +20,12 @@ export default function NavBar() {
         <FontAwesomeIcon
           size="sm"
           className={styles.icon}
-          icon={["fab", "instagram"]}
+          icon={["fab", "facebook-square"]}
+        />
+        <FontAwesomeIcon
+          size="sm"
+          className={styles.icon}
+          icon={["fab", "linkedin-in"]}
         />
         <FontAwesomeIcon
           size="sm"

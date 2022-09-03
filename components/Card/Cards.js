@@ -13,7 +13,7 @@ const Card = ({ item }) => {
           src={item.image}
           alt={`${item.name} image`}
         />
-        <p>{item.score}%</p>
+        <p>{item.score}</p>
       </div>
       <p className={styles.name}>{item.name}</p>
     </div>

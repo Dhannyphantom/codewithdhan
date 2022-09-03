@@ -18,9 +18,9 @@ export default function History() {
     <section className={styles.container}>
       <Title title="Education History" />
       <div className={styles.history}>
-        <div>{leftElements}</div>
-        <div>{midElements}</div>
-        <div>{rightElements}</div>
+        <div className={styles.experience}>{leftElements}</div>
+        <div className={styles.experience}>{midElements}</div>
+        <div className={styles.experience}>{rightElements}</div>
       </div>
       <Separator />
     </section>

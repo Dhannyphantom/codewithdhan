@@ -1,0 +1,33 @@
+.card_container {
+  padding: 20px;
+  display: grid;
+  column-gap: 20px;
+  row-gap: 50px;
+  cursor: pointer;
+  justify-content: center;
+  grid-template-columns: auto;
+}
+
+.card {
+  width: 420px;
+}
+
+.card_details {
+  padding: 0px 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card_container {
+    grid-template-columns: auto;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .card_container {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .card_container {
+    grid-template-columns: auto auto auto;
+  }
+}

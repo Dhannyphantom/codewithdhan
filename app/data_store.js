@@ -204,3 +204,30 @@ export const rightPane = [
     content: "• Patrick Collins @freecodecamp",
   },
 ];
+
+export const myProjects = [
+  {
+    id: nanoid(),
+    name: "Weebo",
+    type: "Mobile Application",
+    image: "/projects/weebo_p.jpg",
+    description:
+      "A social media kinda app for the Anime community. Cool and Fun app for degenerate weebs.",
+  },
+  {
+    id: nanoid(),
+    name: "Loka",
+    image: "/projects/loka_p.jpg",
+    type: "Mobile Application",
+    description:
+      "An e-commerce mobile application that is region or local based. The Online Market for your locality.",
+  },
+  {
+    id: nanoid(),
+    name: "E-mall",
+    type: "Mobile Application",
+    image: "/projects/weebo_p.jpg",
+    description:
+      "An e-commerce app for a shopping mall. The management and delivery app for businesses such as malls, plaza.",
+  },
+];

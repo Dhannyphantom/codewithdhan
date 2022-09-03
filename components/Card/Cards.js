@@ -26,7 +26,7 @@ export default function Cards() {
   ));
   return (
     <section>
-      <Title title="Skills and Usage" />
+      <Title title="Techs and Usage" />
       <div className={styles.cards}>{cardElements}</div>
     </section>
   );

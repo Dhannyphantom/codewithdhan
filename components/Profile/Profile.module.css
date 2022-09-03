@@ -36,6 +36,7 @@
 
 .small_border {
   align-self: center;
+  display: none;
 }
 
 .pic {
@@ -53,10 +54,19 @@
   .border {
     display: none;
   }
+  .small_border {
+    display: flex;
+  }
   .details {
     align-items: flex-start;
   }
   .experiences {
     width: 38%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .small_border {
+    display: none;
   }
 }

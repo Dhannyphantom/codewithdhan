@@ -35,3 +35,13 @@
 .cards::-webkit-scrollbar {
   height: 10px;
 }
+
+@media (prefers-color-scheme: dark) {
+  .container {
+    color-scheme: dark;
+  }
+  .card {
+    color: white;
+    background: #2e2d2d;
+  }
+}

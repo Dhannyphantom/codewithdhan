@@ -1,5 +1,5 @@
 import Title from "../Title/Title";
-import "./AppProject.css";
+import styles from "./AppProject.module.css";
 
 export default function AppProject() {
   return (

@@ -4,6 +4,7 @@ import Cards from "../components/Card/Cards";
 import Profile from "../components/Profile/Profile";
 import Separator from "../components/Separator/Separator";
 import History from "../components/History/History";
+import AppProject from "../components/AppProject/AppProject";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Cards />
         <Separator />
         <History />
+        <AppProject />
       </main>
     </div>
   );

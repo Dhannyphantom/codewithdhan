@@ -16,11 +16,11 @@ export default function Profile() {
       <div className={styles.border}>
         <div className={styles.pic_container}>
           <Image
-            src="/danny.png"
-            width={350}
-            height={500}
-            // layout="fill"
-            // objectFit="scale-down"
+            src="/me.png"
+            // width={550}
+            // height={500}
+            layout="fill"
+            objectFit="cover"
             alt=""
             className={styles.pic}
           />

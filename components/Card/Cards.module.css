@@ -1,4 +1,4 @@
-.card-container {
+.container {
   width: 100px;
   font-size: 0.8rem;
   margin: 0px 10px;
@@ -20,16 +20,16 @@
   border-radius: 10px;
 }
 
-.card-name {
+.name {
   text-align: center;
   margin-top: 10px;
 }
 
-.cards-container {
+.cards {
   display: flex;
   overflow-x: scroll;
 }
 
-.cards-container::-webkit-scrollbar {
+.cards::-webkit-scrollbar {
   display: none;
 }

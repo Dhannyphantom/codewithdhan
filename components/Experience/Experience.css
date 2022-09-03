@@ -1,0 +1,27 @@
+.experience {
+  padding: 0px 10px;
+}
+
+.right {
+  text-align: end;
+  align-self: center;
+}
+
+.left {
+  text-align: start;
+  margin-top: 15px;
+}
+
+.right-text {
+  font-size: 1.6rem;
+}
+
+.left-text {
+  font-size: 12px;
+  /* width: 100%; */
+}
+
+.experience > h6 {
+  text-transform: uppercase;
+  color: #a9a9a9;
+}

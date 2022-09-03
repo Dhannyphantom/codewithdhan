@@ -2,6 +2,8 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Cards from "../components/Card/Cards";
 import Profile from "../components/Profile/Profile";
+import Separator from "../components/Separator/Separator";
+import History from "../components/History/History";
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
         </h2>
         <Profile />
         <Cards />
+        <Separator />
+        <History />
       </main>
     </div>
   );

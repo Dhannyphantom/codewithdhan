@@ -1,12 +1,19 @@
-import "./Experience.css";
+import styles from "./Experience.module.css";
+
 export default function Experience({ item }) {
   const isRight = item.direction === "right";
   return (
-    <div className="experience">
-      <h6 className={isRight ? "right" : "left"}>{item.title}</h6>
+    <div className={styles.container}>
+      <h6 className={isRight ? styles.right : styles.left}>{item.title}</h6>
 
       {item.content.split(". ").map((str) => (
-        <p className={isRight ? "right right-text" : "left-text"}>{str}</p>
+        <p
+          className={
+            isRight ? `${styles.right} ${styles.right_text}` : styles.left_text
+          }
+        >
+          {str}
+        </p>
         // <li className="left-text"> {str} </li>
       ))}
     </div>

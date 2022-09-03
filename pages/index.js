@@ -1,9 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Cards from "../components/Card/Cards";
+import Profile from "../components/Profile/Profile";
 
 export default function Home() {
   return (
@@ -22,6 +20,7 @@ export default function Home() {
           Daniel Olojo <br /> Full Stack Web & Mobile App Developer <br /> Based
           in Nigeria
         </h2>
+        <Profile />
         <Cards />
       </main>
     </div>

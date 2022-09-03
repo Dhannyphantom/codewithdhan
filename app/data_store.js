@@ -86,3 +86,48 @@ export const skills_data = [
     score: 66,
   },
 ].sort((a, b) => b.score - a.score);
+
+export const leftExperienceArr = [
+  {
+    id: nanoid(),
+    title: "biography",
+    list: false,
+    content:
+      "A self taught software developer who is very passionate about programming and tech in general",
+  },
+  {
+    id: nanoid(),
+    title: "contact",
+    list: false,
+    content: `Kogi, Nigeria. olojodhanny@gmail.com. +234 708 171 3909`,
+  },
+  {
+    id: nanoid(),
+    title: "services",
+    list: true,
+    content:
+      "Mobile App Development. Backend development. Web Development. Blockchain development. UI/UX Designer",
+  },
+];
+export const rightExperienceArr = [
+  {
+    id: nanoid(),
+    title: "years of experience",
+    content: "3",
+  },
+  {
+    id: nanoid(),
+    title: "clients satisfaction",
+    content: "99.9%",
+  },
+  {
+    id: nanoid(),
+    title: "languages & tech",
+    content: "+15",
+  },
+  {
+    id: nanoid(),
+    title: "projects done",
+    content: "5",
+  },
+];

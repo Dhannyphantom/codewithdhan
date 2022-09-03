@@ -1,4 +1,4 @@
-.experience {
+.container {
   padding: 0px 10px;
 }
 
@@ -12,16 +12,16 @@
   margin-top: 15px;
 }
 
-.right-text {
+.right_text {
   font-size: 1.6rem;
 }
 
-.left-text {
+.left_text {
   font-size: 12px;
   /* width: 100%; */
 }
 
-.experience > h6 {
+.container > h6 {
   text-transform: uppercase;
   color: #a9a9a9;
 }

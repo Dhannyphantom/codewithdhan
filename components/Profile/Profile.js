@@ -1,52 +1,7 @@
-import { nanoid } from "nanoid";
-import "./Profile.css";
-import me from "../../assets/me.png";
+import styles from "./Profile.module.css";
 import Experience from "../Experience/Experience";
-
-const leftExperienceArr = [
-  {
-    id: nanoid(),
-    title: "biography",
-    list: false,
-    content:
-      "A self taught software developer who is very passionate about programming and tech in general",
-  },
-  {
-    id: nanoid(),
-    title: "contact",
-    list: false,
-    content: `Kogi, Nigeria. olojodhanny@gmail.com. +234 708 171 3909`,
-  },
-  {
-    id: nanoid(),
-    title: "services",
-    list: true,
-    content:
-      "Mobile App Development. Backend development. Web Development. Blockchain development. UI/UX Designer",
-  },
-];
-const rightExperienceArr = [
-  {
-    id: nanoid(),
-    title: "years of experience",
-    content: "3",
-  },
-  {
-    id: nanoid(),
-    title: "clients satisfaction",
-    content: "99.9%",
-  },
-  {
-    id: nanoid(),
-    title: "languages & tech",
-    content: "+15",
-  },
-  {
-    id: nanoid(),
-    title: "projects done",
-    content: "5",
-  },
-];
+import { rightExperienceArr, leftExperienceArr } from "../../app/data_store";
+import Image from "next/image";
 
 export default function Profile() {
   const leftExperienceElements = leftExperienceArr.map((obj) => (
@@ -56,14 +11,22 @@ export default function Profile() {
     <Experience key={obj.id} item={{ ...obj, direction: "right" }} />
   ));
   return (
-    <section className="profile-section">
-      <div className="experiences">{leftExperienceElements}</div>
-      <div className="border">
-        <div className="pic-container">
-          <img src={me} alt="" className="pic" />
+    <section className={styles.container}>
+      <div className={styles.experiences}>{leftExperienceElements}</div>
+      <div className={styles.border}>
+        <div className={styles.pic_container}>
+          <Image
+            src="/danny.png"
+            width={350}
+            height={500}
+            // layout="fill"
+            // objectFit="scale-down"
+            alt=""
+            className={styles.pic}
+          />
         </div>
       </div>
-      <div className="experiences">{rightExperienceElements}</div>
+      <div className={styles.experiences}>{rightExperienceElements}</div>
     </section>
   );
 }

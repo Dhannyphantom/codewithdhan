@@ -1,4 +1,4 @@
-.profile-section {
+.container {
   /* height: 550px; */
   display: flex;
   flex-direction: row;
@@ -7,7 +7,8 @@
   margin-bottom: 50px;
 }
 
-.pic-container {
+.pic_container {
+  position: relative;
   background: linear-gradient(#f0f8ff 10%, #acc0fe);
   width: 300px;
   height: 420px;
@@ -30,6 +31,7 @@
 
 .pic {
   width: 460px;
+  height: 500px;
 }
 
 .experiences {

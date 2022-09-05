@@ -8,6 +8,7 @@ export default function Experience({ item }) {
 
       {item.content.split(". ").map((str) => (
         <p
+          key={str}
           className={
             isRight ? `${styles.right} ${styles.right_text}` : styles.left_text
           }

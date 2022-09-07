@@ -10,10 +10,46 @@
 
 .card {
   width: 420px;
+  border-bottom: 0.8px solid #a5a5a5;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .card_details {
   padding: 0px 5px;
+}
+
+.card_details > p {
+  font-size: 14px;
+  width: 85%;
+  line-height: 22px;
+}
+
+.header {
+  background: linear-gradient(to right, #f5e3e6, #d9e4f5);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 10px;
+  display: flex;
+  color: #414141;
+  justify-content: space-between;
+}
+
+.card:nth-child(odd) > .header {
+  background: linear-gradient(to right, #d5d0e5, #f3e6e8);
+}
+
+.header_img {
+  padding: 8px 15px;
+}
+
+.left_content > h4 {
+  margin: 12px 0 5px 2px;
+}
+
+.left_content > small {
+  font-size: 11px;
+  margin-left: 2px;
 }
 
 @media only screen and (max-width: 600px) {

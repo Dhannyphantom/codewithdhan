@@ -210,14 +210,14 @@ export const myProjects = [
     id: nanoid(),
     name: "Weebo",
     type: "Mobile Application",
-    image: "/projects/weebo_p.jpg",
+    image: "/projects/weebo.png",
     description:
       "A social media kinda app for the Anime community. Cool and Fun app for degenerate weebs.",
   },
   {
     id: nanoid(),
     name: "Loka",
-    image: "/projects/loka_p.jpg",
+    image: "/projects/weebo.png",
     type: "Mobile Application",
     description:
       "An e-commerce mobile application that is region or local based. The Online Market for your locality.",
@@ -226,8 +226,24 @@ export const myProjects = [
     id: nanoid(),
     name: "E-mall",
     type: "Mobile Application",
-    image: "/projects/weebo_p.jpg",
+    image: "/projects/weebo.png",
     description:
       "An e-commerce app for a shopping mall. The management and delivery app for businesses such as malls, plaza.",
+  },
+  {
+    id: nanoid(),
+    name: "Pizza joint",
+    type: "Web Application",
+    image: "/projects/vercel.svg",
+    description:
+      "A simple fully animated web app. Using framer motion to animate React and Next.js projects",
+  },
+  {
+    id: nanoid(),
+    name: "Finance Logger",
+    type: "Web Application",
+    image: "/projects/weebo.png",
+    description:
+      "A simple typescript written web app. Using typescript to build a simple web logger",
   },
 ];

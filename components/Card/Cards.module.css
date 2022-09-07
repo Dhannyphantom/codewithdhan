@@ -9,6 +9,7 @@
   height: 150px;
   width: 100px;
   display: flex;
+  cursor: pointer;
   flex-direction: column;
   border-radius: 55px;
   justify-content: space-evenly;
@@ -34,7 +35,6 @@
 }
 
 .cards::-webkit-scrollbar {
-  cursor: pointer;
   height: 8px;
 }
 

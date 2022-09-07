@@ -217,7 +217,7 @@ export const myProjects = [
   {
     id: nanoid(),
     name: "Loka",
-    image: "/projects/weebo.png",
+    image: "/projects/loka.png",
     type: "Mobile Application",
     description:
       "An e-commerce mobile application that is region or local based. The Online Market for your locality.",

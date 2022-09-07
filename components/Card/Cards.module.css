@@ -5,7 +5,7 @@
 }
 
 .card {
-  background-color: #dfdfdf;
+  background: linear-gradient(to bottom, #f5e3e6, #d9e4f5);
   height: 150px;
   width: 100px;
   display: flex;
@@ -23,17 +23,29 @@
 .name {
   text-align: center;
   margin-top: 10px;
+  color: #414141;
+  font-weight: bolder;
 }
 
 .cards {
   display: flex;
   overflow-x: scroll;
   padding-bottom: 20px;
-  scrollbar-width: thin;
 }
 
 .cards::-webkit-scrollbar {
-  height: 10px;
+  cursor: pointer;
+  height: 8px;
+}
+
+.cards::-webkit-scrollbar-track {
+  background-color: #dfdfdf;
+  border-radius: 20px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background: #a9a9a9;
+  border-radius: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,5 +55,8 @@
   .card {
     color: white;
     background: #2e2d2d;
+  }
+  .name {
+    color: #e3dddd;
   }
 }

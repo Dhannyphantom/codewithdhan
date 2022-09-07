@@ -12,26 +12,46 @@ export default function NavBar() {
       </div>
       <Logo />
       <div className={styles.icon_container}>
-        <FontAwesomeIcon
-          size="sm"
-          className={styles.icon}
-          icon={["fab", "github"]}
-        />
-        <FontAwesomeIcon
-          size="sm"
-          className={styles.icon}
-          icon={["fab", "facebook-square"]}
-        />
-        <FontAwesomeIcon
-          size="sm"
-          className={styles.icon}
-          icon={["fab", "linkedin-in"]}
-        />
-        <FontAwesomeIcon
-          size="sm"
-          className={styles.icon}
-          icon={["fab", "twitter"]}
-        />
+        <a
+          href="https://github.com/Dhannyphantom"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon
+            size="sm"
+            className={styles.icon}
+            icon={["fab", "github"]}
+          />
+        </a>
+        <a
+          href="https://wa.me/+23407081713909"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon
+            size="sm"
+            className={styles.icon}
+            icon={["fab", "whatsapp"]}
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/daniel-olojo-b61904243"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon
+            size="sm"
+            className={styles.icon}
+            icon={["fab", "linkedin-in"]}
+          />
+        </a>
+        <a target="_blank" rel="noreferrer">
+          <FontAwesomeIcon
+            size="sm"
+            className={styles.icon}
+            icon={["fab", "twitter"]}
+          />
+        </a>
       </div>
     </nav>
   );

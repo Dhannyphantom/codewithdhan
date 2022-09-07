@@ -25,3 +25,9 @@
   text-transform: uppercase;
   color: #a9a9a9;
 }
+
+@media only screen and (max-width: 600px) {
+  .left_text {
+    font-size: 0.9rem;
+  }
+}

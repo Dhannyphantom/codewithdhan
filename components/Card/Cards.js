@@ -1,12 +1,18 @@
 import styles from "./Cards.module.css";
 import Title from "../Title/Title";
+import { motion } from "framer-motion";
 import { skills_data } from "../../app/data_store";
 import Image from "next/image";
+import { cardVart } from "../../app/motion_store";
 
 const Card = ({ item }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.card}>
+      <motion.div
+        variants={cardVart}
+        whileHover="hover"
+        className={styles.card}
+      >
         <Image
           width={50}
           height={50}
@@ -14,7 +20,7 @@ const Card = ({ item }) => {
           alt={`${item.name} image`}
         />
         <p>{item.score}</p>
-      </div>
+      </motion.div>
       <p className={styles.name}>{item.name}</p>
     </div>
   );

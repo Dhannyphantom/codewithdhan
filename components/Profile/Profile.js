@@ -1,22 +1,26 @@
+import Image from "next/image";
 import styles from "./Profile.module.css";
 import Experience from "../Experience/Experience";
 import { rightExperienceArr, leftExperienceArr } from "../../app/data_store";
-import Image from "next/image";
+import { motion } from "framer-motion";
+import { bgVart } from "../../app/motion_store";
 
 const RenderImage = ({ style }) => {
   return (
     <div className={styles[style]}>
-      <div className={styles.pic_container}>
+      <motion.div
+        variants={bgVart}
+        whileHover="hover"
+        className={styles.pic_container}
+      >
         <Image
           src="/danno.png"
-          // width={550}
-          // height={500}
           layout="fill"
           objectFit="cover"
-          alt=""
+          alt="Daniel's profile photo"
           className={styles.pic}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

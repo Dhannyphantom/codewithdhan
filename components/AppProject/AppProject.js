@@ -2,11 +2,13 @@ import Title from "../Title/Title";
 import styles from "./AppProject.module.css";
 import { myProjects } from "../../app/data_store";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { tileVart, headerVart } from "../../app/motion_store";
 
 const ProjectCard = ({ card, index }) => {
   return (
-    <div className={styles.card}>
-      <div className={styles.header}>
+    <motion.div variants={tileVart} whileHover="hover" className={styles.card}>
+      <motion.div variants={headerVart} className={styles.header}>
         <div className={styles.left}>
           <div className={styles.left_content}>
             <h4> {card.name} </h4>
@@ -26,14 +28,14 @@ const ProjectCard = ({ card, index }) => {
             height={60}
           />
         </div>
-      </div>
+      </motion.div>
       <div className={styles.card_details}>
         <h5>
           {card.name} &bull; <small>{card.type}</small>
         </h5>
         <p> {card.description} </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

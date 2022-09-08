@@ -8,7 +8,7 @@ const RenderImage = ({ style }) => {
     <div className={styles[style]}>
       <div className={styles.pic_container}>
         <Image
-          src="/me.png"
+          src="/danno.png"
           // width={550}
           // height={500}
           layout="fill"

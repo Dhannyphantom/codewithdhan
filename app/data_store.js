@@ -9,6 +9,12 @@ export const skills_data = [
   },
   {
     id: nanoid(),
+    name: "Redux",
+    image: "/skills/redux.png",
+    score: "4.3",
+  },
+  {
+    id: nanoid(),
     name: "React Native",
     image: "/skills/rnative.png",
     score: 4.8,
@@ -226,7 +232,7 @@ export const myProjects = [
     id: nanoid(),
     name: "E-mall",
     type: "Mobile Application",
-    image: "/projects/weebo.png",
+    image: "/projects/mall.png",
     description:
       "An e-commerce app for a shopping mall. The management and delivery app for businesses such as malls, plaza.",
   },
@@ -234,7 +240,7 @@ export const myProjects = [
     id: nanoid(),
     name: "Pizza joint",
     type: "Web Application",
-    image: "/projects/vercel.svg",
+    image: "/projects/pizza.svg",
     description:
       "A simple fully animated web app. Using framer motion to animate React and Next.js projects",
   },
@@ -242,7 +248,7 @@ export const myProjects = [
     id: nanoid(),
     name: "Finance Logger",
     type: "Web Application",
-    image: "/projects/weebo.png",
+    image: "/projects/f_logger.png",
     description:
       "A simple typescript written web app. Using typescript to build a simple web logger",
   },

@@ -3,3 +3,9 @@
   color: #373737;
   margin: 10px 30px 30px;
 }
+
+@media (prefers-color-scheme: dark) {
+  .title {
+    color: #a9a9a9;
+  }
+}

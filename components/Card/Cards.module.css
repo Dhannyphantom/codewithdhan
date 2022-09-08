@@ -60,3 +60,9 @@
     color: #e3dddd;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .cards::-webkit-scrollbar {
+    display: none;
+  }
+}

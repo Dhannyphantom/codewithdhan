@@ -13,7 +13,8 @@
 
 .pic_container {
   position: relative;
-  background: linear-gradient(#f0f8ff 10%, #acc0fe);
+  background: linear-gradient(to right, #f5e3e6, #d9e4f5);
+  /* background: linear-gradient(#f0f8ff 10%, #acc0fe); */
   width: 300px;
   height: 420px;
   border-radius: 150px;
@@ -58,7 +59,7 @@
     display: flex;
   }
   .details {
-    align-items: flex-start;
+    align-items: baseline;
   }
   .experiences {
     width: 38%;
@@ -68,5 +69,11 @@
 @media only screen and (min-width: 900px) {
   .small_border {
     display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .pic_container {
+    background: linear-gradient(to right, #bdc3c7, #fad0c4);
   }
 }

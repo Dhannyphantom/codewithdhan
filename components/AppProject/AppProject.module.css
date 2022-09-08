@@ -3,7 +3,6 @@
   display: grid;
   column-gap: 20px;
   row-gap: 50px;
-  cursor: pointer;
   justify-content: center;
   grid-template-columns: auto;
 }
@@ -12,6 +11,8 @@
   width: 420px;
   border-bottom: 0.8px solid #a5a5a5;
   border-bottom-right-radius: 10px;
+  cursor: pointer;
+
   border-bottom-left-radius: 10px;
 }
 

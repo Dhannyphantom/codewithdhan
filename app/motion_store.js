@@ -51,3 +51,20 @@ export const headerVart = {
     },
   },
 };
+
+export const infoVart = {
+  from: {
+    y: "-100vh",
+    opacity: 0,
+  },
+  to: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 120,
+      mass: 0.4,
+      damping: 8,
+    },
+  },
+};

@@ -5,6 +5,8 @@ import Profile from "../components/Profile/Profile";
 import Separator from "../components/Separator/Separator";
 import History from "../components/History/History";
 import AppProject from "../components/AppProject/AppProject";
+import { motion } from "framer-motion";
+import { infoVart } from "../app/motion_store";
 
 export default function Home() {
   return (
@@ -19,10 +21,21 @@ export default function Home() {
       </Head>
 
       <main>
-        <h2 className={styles.title}>
-          Daniel Olojo <br /> Full Stack Web & Mobile App Developer <br /> Based
-          in Nigeria
-        </h2>
+        <motion.section
+          initial="from"
+          transition={{ staggerChildren: 0.8 }}
+          animate="to"
+        >
+          <motion.h2 variants={infoVart} className={styles.title}>
+            Daniel Olojo
+          </motion.h2>
+          <motion.h2 variants={infoVart} className={styles.title}>
+            Full Stack Web & Mobile App Developer
+          </motion.h2>
+          <motion.h2 variants={infoVart} className={styles.title}>
+            Based in Nigeria
+          </motion.h2>
+        </motion.section>
         <Profile />
         <Cards />
         <Separator />

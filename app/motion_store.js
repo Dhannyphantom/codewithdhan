@@ -68,3 +68,13 @@ export const infoVart = {
     },
   },
 };
+
+export const hireVart = {
+  hover: {
+    x: [0, -5, 5, 0],
+    transition: {
+      type: "spring",
+      stiffness: 800,
+    },
+  },
+};

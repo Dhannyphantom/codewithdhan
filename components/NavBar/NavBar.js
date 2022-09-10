@@ -1,14 +1,29 @@
 import styles from "./NavBar.module.css";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { hireVart } from "../../app/motion_store";
+import { motion } from "framer-motion";
 
 import Logo from "../Logo/Logo";
+import Modal from "../Modal/Modal";
 
-export default function NavBar() {
+const HireMeForm = () => {
+  return (
+    <div>
+      <h1>Hire Me</h1>
+    </div>
+  );
+};
+
+const NavBar = () => {
+  const [modal, setModal] = useState(true);
   return (
     <nav className={styles.nav}>
       <div className={styles.nav_links}>
-        <p>Projects</p>
-        <p>Hire Me</p>
+        <button>Projects</button>
+        <motion.button variants={hireVart} whileHover="hover">
+          Hire Me
+        </motion.button>
       </div>
       <Logo />
       <div className={styles.icon_container}>
@@ -53,6 +68,9 @@ export default function NavBar() {
           />
         </a>
       </div>
+      <Modal modal={modal} RenderComponent={HireMeForm} setModal={setModal} />
     </nav>
   );
-}
+};
+
+export default NavBar;

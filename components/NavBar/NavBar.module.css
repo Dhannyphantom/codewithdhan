@@ -10,15 +10,23 @@
   flex-direction: row;
 }
 
-.nav_links > p {
-  font-size: 12px;
+.nav_links > button {
+  font-size: 13px;
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
-  padding: 0px 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
 }
 
-.nav_links > p:hover,
+.nav_links > button:last-child:hover {
+  border: 1px solid #33a9ff;
+  border-radius: 3px;
+}
+
+.nav_links > button:hover,
 .icon:hover {
   color: #33a9ff;
 }

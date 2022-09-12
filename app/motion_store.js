@@ -73,8 +73,22 @@ export const hireVart = {
   hover: {
     x: [0, -5, 5, 0],
     transition: {
-      type: "spring",
-      stiffness: 800,
+      type: "tween",
+      duration: 0.4,
+      ease: "circOut",
+    },
+  },
+};
+
+export const modalBgVart = {
+  from: {
+    opacity: 0,
+  },
+  to: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: "easeIn",
     },
   },
 };

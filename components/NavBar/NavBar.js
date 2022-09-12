@@ -1,17 +1,27 @@
 import styles from "./NavBar.module.css";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { hireVart } from "../../app/motion_store";
+import { hireVart, modalBgVart } from "../../app/motion_store";
 import { motion } from "framer-motion";
 
 import Logo from "../Logo/Logo";
 import Modal from "../Modal/Modal";
 
-const HireMeForm = () => {
+const HireMeForm = ({ setModal }) => {
   return (
-    <div>
-      <h1>Hire Me</h1>
-    </div>
+    <motion.div
+      className={styles.modal}
+      variants={modalBgVart}
+      initial="from"
+      animate="to"
+    >
+      <h1 onClick={() => setModal(false)}>Hire Me</h1>
+      <h1 onClick={() => setModal(false)}>Hire Me</h1>
+      <h1 onClick={() => setModal(false)}>Hire Me</h1>
+      <h1 onClick={() => setModal(false)}>Hire Me</h1>
+      <h1 onClick={() => setModal(false)}>Hire Me</h1>
+      <h1 onClick={() => setModal(false)}>Hire Me</h1>
+    </motion.div>
   );
 };
 
@@ -21,7 +31,11 @@ const NavBar = () => {
     <nav className={styles.nav}>
       <div className={styles.nav_links}>
         <button>Projects</button>
-        <motion.button variants={hireVart} whileHover="hover">
+        <motion.button
+          onClick={() => setModal(true)}
+          variants={hireVart}
+          whileHover="hover"
+        >
           Hire Me
         </motion.button>
       </div>

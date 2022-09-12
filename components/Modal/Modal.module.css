@@ -14,4 +14,6 @@
   background-color: #fff;
   border-radius: 12px;
   margin: 50px auto;
+  box-shadow: 5px 2px 50px 8px rgba(255, 255, 255, 0.1);
+  padding: 10px;
 }

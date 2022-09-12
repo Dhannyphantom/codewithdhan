@@ -253,3 +253,12 @@ export const myProjects = [
       "A simple typescript written web app. Using typescript to build a simple web logger",
   },
 ];
+
+export const hireFormInitials = {
+  name: "",
+  email: "",
+  contact: "",
+  job_title: "",
+  job_type: "", // full time, part time, project
+  description: "",
+};

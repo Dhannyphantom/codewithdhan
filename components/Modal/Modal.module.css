@@ -15,5 +15,27 @@
   border-radius: 12px;
   margin: 50px auto;
   box-shadow: 5px 2px 50px 8px rgba(255, 255, 255, 0.1);
-  padding: 10px;
+  padding-bottom: 10px;
+}
+
+.close {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: #414141;
+  color: white;
+  cursor: pointer;
+}
+
+.close > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 5px 0px;
+  font-size: 13px;
+}
+
+.close > p > span {
+  font-size: 20px;
+  margin-right: 3px;
 }

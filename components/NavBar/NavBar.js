@@ -3,11 +3,12 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { hireVart, modalBgVart } from "../../app/motion_store";
 import { motion } from "framer-motion";
+import { hireFormInitials } from "../../app/data_store";
 
 import Logo from "../Logo/Logo";
 import Modal from "../Modal/Modal";
 
-const HireMeForm = ({ setModal }) => {
+const HireMeForm = () => {
   return (
     <motion.div
       className={styles.modal}
@@ -15,12 +16,7 @@ const HireMeForm = ({ setModal }) => {
       initial="from"
       animate="to"
     >
-      <h1 onClick={() => setModal(false)}>Hire Me</h1>
-      <h1 onClick={() => setModal(false)}>Hire Me</h1>
-      <h1 onClick={() => setModal(false)}>Hire Me</h1>
-      <h1 onClick={() => setModal(false)}>Hire Me</h1>
-      <h1 onClick={() => setModal(false)}>Hire Me</h1>
-      <h1 onClick={() => setModal(false)}>Hire Me</h1>
+      <h3>Your Details</h3>
     </motion.div>
   );
 };

@@ -17,6 +17,7 @@ const RenderImage = ({ style }) => {
           src="/danno.png"
           layout="fill"
           objectFit="cover"
+          priority
           alt="Daniel's profile photo"
           className={styles.pic}
         />

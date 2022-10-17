@@ -1,14 +1,27 @@
 import styles from "./Modal.module.css";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, useMotionValue, AnimatePresence } from "framer-motion";
 import { modalBgVart } from "../../app/motion_store";
 
-const contentVart = {
-  tap: {
-    scale: 0.8,
+// const contentVart = {
+//   tap: {
+//     scale: 0.8,
+//   },
+// };
+
+const closeVariants = {
+  hover: {
+    backgroundColor: "#d50000",
   },
 };
 
 export default function Modal({ modal, setModal, RenderComponent }) {
+  const scaler = useMotionValue(1);
+
+  const onCloseClick = () => {
+    setModal(false);
+    scaler.set(0.8);
+  };
+
   return (
     <AnimatePresence mode="wait">
       {modal && (
@@ -19,15 +32,11 @@ export default function Modal({ modal, setModal, RenderComponent }) {
           animate="to"
           exit="from"
         >
-          <motion.div
-            variants={contentVart}
-            whileTap="tap"
-            className={styles.content}
-          >
+          <motion.div style={{ scale: scaler }} className={styles.content}>
             <motion.div
-              whileHover={{ backgroundColor: "#c62828" }}
-              whileTap="tap"
-              onClick={() => setModal(false)}
+              variants={closeVariants}
+              whileHover="hover"
+              onClick={onCloseClick}
               className={styles.close}
             >
               <p>

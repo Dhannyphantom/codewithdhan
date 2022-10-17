@@ -7,8 +7,15 @@ import { hireFormInitials } from "../../app/data_store";
 
 import Logo from "../Logo/Logo";
 import Modal from "../Modal/Modal";
+import Input from "../Input/Input";
 
 const HireMeForm = () => {
+  const [] = useState(hireFormInitials);
+
+  const FormFields = Object.entries(hireFormInitials).map(([k, v]) => {
+    return <Input key={k} />;
+  });
+
   return (
     <motion.div
       className={styles.modal}
@@ -17,12 +24,13 @@ const HireMeForm = () => {
       animate="to"
     >
       <h3>Your Details</h3>
+      <form>{FormFields}</form>
     </motion.div>
   );
 };
 
 const NavBar = () => {
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   return (
     <nav className={styles.nav}>
       <div className={styles.nav_links}>
